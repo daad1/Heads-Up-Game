@@ -32,7 +32,7 @@ class HeadUpCelebrity: AppCompatActivity() {
 
         getData()
         postDate()
-        //search()
+        search()
     }
 
     fun getData() {
@@ -112,7 +112,7 @@ class HeadUpCelebrity: AppCompatActivity() {
                         call: retrofit2.Call<ArrayList<UsersItem>?>,
                         t: Throwable
                     ) {
-                        Log.d("Post erorr", "${t.message}")
+                        Log.d("Post error", "${t.message}")
                     }
 
 
@@ -130,6 +130,7 @@ class HeadUpCelebrity: AppCompatActivity() {
 
         var getDate = APIClient().getClient()?.create(APIInterface::class.java)
         var test = getDate?.getdataWithPk2()
+
         if (test != null) {
             test.enqueue(object : retrofit2.Callback<ArrayList<UserItemPk>?> {
                 override fun onResponse(

@@ -15,15 +15,6 @@
         android:textSize="20dp"
         android:backgroundTint="#9261A4C3"
 />
-<TextView
-    android:id="@+id/rotateScreen"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="25dp"
-    android:textSize="25dp"
-  android:text="ROTATE TO BEGIN A GAME"
-
-    />
 
     <TextView
         android:id="@+id/timer"
@@ -33,6 +24,17 @@
         android:text="60"
         android:textSize="25dp"
         />
+
+    <TextView
+    android:id="@+id/rotateScreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    android:textSize="25dp"
+  android:text="ROTATE TO BEGIN A GAME"
+
+    />
+
 
     <TextView
         android:id="@+id/taboo1cele"
